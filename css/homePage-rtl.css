@@ -1,0 +1,109 @@
+/*Media Queries*/
+/*Identity Colors*/
+/*RTL Direction*/
+.header {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .header .logo {
+    float: right;
+    text-align: right;
+  }
+}
+
+.header .logo .logo-img {
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 767px) {
+  .header .logo .logo-img {
+    right: 165px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header .navbar {
+    float: right;
+  }
+}
+
+.header .navbar li {
+  width: 20%;
+  float: right;
+}
+
+@media (max-width: 767px) {
+  .header .navbar li {
+    text-align: right;
+  }
+}
+
+/************************************************ Header Ends************************************************/
+/* Slider Starts */
+/* Slider Ends */
+/* Our Service Starts*/
+@media (min-width: 992px) {
+  .services .service-box {
+    float: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .services .service-box .servic-desc {
+    text-align: right;
+  }
+}
+
+/* Our Service Ends*/
+/* Our Service Starts*/
+.players .player-box {
+  float: right;
+}
+
+@media (min-width: 768px) {
+  .players .player-box {
+    float: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .players .player-box {
+    text-align: right;
+  }
+}
+
+/* Our Service Ends*/
+/* Lorem Starts*/
+.Lorem .lorem-box {
+  float: right;
+}
+
+/* Lorem Ends*/
+/***********************************************Page Ends****************************************************/
+.footer .gallery,
+.footer .info,
+.footer .contact {
+  float: right;
+}
+
+.footer .gallery {
+  float: right;
+}
+
+@media (min-width: 768px) {
+  .footer .text {
+    float: right;
+  }
+}
+
+.footer .info {
+  padding-left: 60px;
+}
+
+@media (max-width: 767px) {
+  .footer .info {
+    padding-right: 220px;
+  }
+}

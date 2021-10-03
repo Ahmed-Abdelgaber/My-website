@@ -1,0 +1,150 @@
+.footer {
+    margin-top: 50px;
+    padding-top: 30px 60px;
+    background-color: $grayMainColor;
+    overflow-x: hidden;
+    .gallery,
+    .info,
+    .contact {
+        float: $float-direction;
+    }
+    .gallery {
+        @media #{$smallScreen} {
+            width: 100%;
+        }
+        @media #{$mediumScreen} {
+            width: 40%;
+        }
+        @media #{$mobile} {
+            text-align: center;
+        }
+        h3 {
+            color: rgb(68, 67, 67);
+        }
+        .img-box {
+            overflow: hidden;
+            img {
+                @media #{$mobile} {
+                    float: none;
+                    display: block;
+                    position: relative;
+                    left: 40%;
+                }
+                border-radius: 15px;
+                width: 150px;
+                height: 150px;
+                float: $float-direction;
+                margin-bottom: 10px;
+            }
+            .text {
+                @media #{$mobile} {
+                    float: none;
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                @media #{$smallScreen} {
+                    float: $float-direction;
+                    margin: 0 15px;
+                    width: calc(100% - 180px);
+                }
+                h4 {
+                    color: $redMainColor;
+                }
+                p {
+                    margin-top: -10px;
+                    color: rgb(68, 67, 67);
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+    .info {
+        @media #{$smallScreen} {
+            width: 50%;
+        }
+        @media #{$mediumScreen} {
+            width: 30%;
+        }
+        @media #{$mobile} {
+            float: none;
+            display: block;
+            text-align: center;
+        }
+        h3 {
+            color: rgb(68, 67, 67);
+        }
+        ul {
+            color: rgb(68, 67, 67);
+            line-height: 1.8;
+            li {
+                span {
+                    color: $redMainColor;
+                    cursor: pointer;
+                    transition: 0.8s;
+                    font-weight: bold;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        h4 {
+            color: rgb(68, 67, 67);
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        p {
+            color: rgb(68, 67, 67);
+            margin-top: 0;
+        }
+    }
+    .contact {
+        @media #{$smallScreen} {
+            width: 50%;
+        }
+        @media #{$mediumScreen} {
+            width: 30%;
+        }
+        @media #{$mobile} {
+            text-align: center;
+        }
+        h3 {
+            color: rgb(68, 67, 67);
+        }
+        form {
+            width: 100%;
+            height: 100%;
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                border-radius: 15px;
+                border: none;
+                padding-bottom: 5px;
+                margin: 5px;
+                width: 100%;
+                outline: none;
+                &:placeholder-shown {
+                    color: rgb(68, 67, 67);
+                    padding: 15px 10px;
+                    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                }
+                &:focus {
+                    border: 3px solid $redMainColor;
+                }
+            }
+            input[type="text"],
+            input[type="email"] {
+                height: 40px;
+                &:invalid {
+                    border: 3px solid red;
+                }
+            }
+            textarea {
+                height: 150px;
+            }
+        }
+    }
+}

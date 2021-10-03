@@ -1,0 +1,99 @@
+@import "helpers/variables";
+
+$float-direction: right;
+$float-directionr: left;
+
+.header {
+    position: relative;
+    .logo {
+        @media #{$mediumScreen} {
+            float: $float-direction;
+            text-align: $float-direction;
+        }
+        .logo-img {
+            @media #{$mobile} {
+                right: 165px;
+            }
+            position: absolute;
+            right: 0;
+        }
+    }
+    .navbar {
+        @media #{$mediumScreen} {
+            float: $float-direction;
+        }
+
+        li {
+            @media #{$mobile} {
+                text-align: $float-direction;
+            }
+            width: 20%;
+            float: $float-direction;
+        }
+    }
+}
+/************************************************ Header Ends************************************************/
+/* Slider Starts */
+/* Slider Ends */
+/* Our Service Starts*/
+.services {
+    .service-box {
+        @media #{$mediumScreen} {
+            float: $float-direction;
+        }
+        @media #{$mobile} {
+
+        }
+        .servic-desc {
+            @media #{$mediumScreen} {
+                text-align: $float-direction;
+            }
+        }
+    }
+}
+/* Our Service Ends*/
+
+/* Our Service Starts*/
+.players {
+    .player-box {
+        @media #{$smallScreen } {
+            float: $float-direction;
+        }
+        @media #{$mediumScreen } {
+            text-align: $float-direction;
+        }
+        float: $float-direction;
+    }
+}
+/* Our Service Ends*/
+
+/* Lorem Starts*/
+.Lorem {
+    .lorem-box {
+        float: $float-direction;
+    }
+}
+/* Lorem Ends*/
+/***********************************************Page Ends****************************************************/
+
+.footer {
+    .gallery,
+    .info,
+    .contact {
+        float: $float-direction;
+    }
+    .gallery {
+        float: $float-direction;
+    }
+    .text {
+        @media #{$smallScreen} {
+            float: $float-direction;
+        }
+    }
+    .info{
+        padding-left: 60px;
+        @media #{$mobile} {
+            padding-right: 220px;
+        }
+    }
+}

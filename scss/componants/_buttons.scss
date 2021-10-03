@@ -1,0 +1,18 @@
+.main-button{
+    background-color: rgba($redMainColor,.8);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .7s;
+    cursor: pointer;
+    margin: 5px;
+    &:hover{
+        background-color:$redMainColor;
+        color: $grayMainColor;
+        transform: translateY(-3px);
+    }
+}

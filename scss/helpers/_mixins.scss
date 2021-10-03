@@ -1,0 +1,60 @@
+/*
+ mixins for media queries
+*/
+@mixin mobile {
+    @media #{mobile} {
+        @content;
+    }
+    
+}
+@mixin smallScreen {
+    @media #{$smallScreen} {
+        @content;
+    }
+}
+@mixin mediumScreen {
+    @media #{$mediumScreen} {
+        @content;
+    }
+}
+@mixin bigScreen {
+    @media #{$bigScreen} {
+        @content;
+    }
+}
+/*
+a mixin for set prefixes
+ */
+@mixin preFixer($property, $value, $preFixes: ()) {
+    @each $PreFix in $preFixes {
+        #{'-' + $PreFix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+}
+
+/*
+ a mixin to set overlay
+*/
+
+@mixin overlay {
+    position: absolute;
+    width: 100%;
+    height: 100;
+    left: 0;
+    top :0;
+}
+
+/*
+ a mixin to form animation
+*/
+@mixin animation($animaion-name) {
+    @-webkit-keyframes #{$animaion-name}{
+        @content;
+    }
+    @-moz-keyframes #{$animaion-name}{
+        @content;
+    }
+    @keyframes #{$animaion-name}{
+        @content;
+    }
+}

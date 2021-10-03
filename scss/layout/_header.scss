@@ -1,0 +1,96 @@
+.header {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid $grayMainColor;
+    position: relative;
+    .logo {
+        @media #{$mobile}{
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+        @media #{$smallScreen} {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+        @media #{$mediumScreen} {
+            width: 30%;
+            float: $float-direction;
+            text-align: $float-direction;
+        }
+        .logo-img {
+            @media #{$mobile}{
+                position: absolute;
+                width: 200px;
+                margin-top: -35px;
+                opacity: 0.4;
+                transform: translateX(-93px);
+                z-index: -1;
+            }
+            @media #{$smallScreen} {
+                position: absolute;
+                width: 200px;
+                margin-top: -35px;
+                opacity: 0.4;
+                transform: translateX(-93px);
+                z-index: -1;
+            }
+            @media #{$mediumScreen} {
+                position: absolute;
+                width: 200px;
+                margin-top: -35px;
+                opacity: 0.4;
+                transform: translateX(15px);
+            }
+        }
+        h1 {
+            margin-bottom: 0;
+            margin-top: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+        p {
+            color: #000;
+            padding-left: 22px;
+        }
+    }
+    .navbar {
+        overflow: hidden;
+        background: $redMainColor;
+        border-radius: 15px;
+        @media #{$smallScreen} {
+            width: 100%;
+            float: none;
+            margin-top: 30px;
+        }
+        @media #{$mediumScreen} {
+            width: 70%;
+            float: $float-direction;
+        }
+
+        li {
+            @media #{$mobile} {
+                width: 100%;
+                display: block;
+                float: none;
+                text-align: $float-direction;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            width: 20%;
+            float: $float-direction;
+            font-size: 18px;
+            text-align: center;
+            a {
+                display: block;
+                padding: 20px 10px;
+                color: #fff;
+                text-decoration: none;
+                &:hover {
+                    color: $grayMainColor;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+*{
+    @include preFixer(box-sizing, border-box, webkit moz);
+}
+.container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    @media #{$smallScreen} {
+        width: 750px;
+    }
+    @media #{$mediumScreen} {
+        width: 970px;
+    }
+    @media #{$bigScreen}{
+        width: 1170px;
+    }
+}
+
+.clearfix{
+    clear: both;
+}
